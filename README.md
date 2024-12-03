@@ -13,54 +13,84 @@ CRN: 29704
 - Kristen Wang [@kristennw](https://github.com/kristennw)
 - Oliver Tripcony [@OliverTripcony](https://github.com/OliverTripcony)
 
-## Data Model Description:
-Entities and Relationships:
-Member:
+## Data Model Description:# Library Management System Data Model
 
-Attributes: idmember, memberName, email, Address.
-Each member can have zero or many cards (1:0..N cardinality) as shown by the relationship between member and card. The idmember acts as a foreign key in the card table.
-Members may also provide reviews for media items (1:0..N cardinality), creating a connection to the review table.
-Card:
+## Overview
+This data model represents a library management system designed to handle operations such as member registration, media item inventory, loans, reviews, and employee responsibilities. The schema provides a comprehensive structure that connects members, staff, and resources, facilitating efficient library operations.
 
-Attributes: idCard, issue_date, expiration_date, idmember, status.
-Each card belongs to exactly one member (1:1 cardinality), but a member can hold multiple cards (1:N modality).
-Cards are independent entities but reference members to track their activity.
-MediaItem:
+## Entities and Relationships
 
-Attributes: idmediaItem, title, release_year, language, idsection, idType, genre.
-Each media item is part of one section (1:1 cardinality), and each section can have multiple media items (1:N modality).
-Media items are tied to mediaType (e.g., book, magazine) in a 1:1 relationship.
-Loan:
+### 1. Member
+- **Attributes**: `idmember`, `memberName`, `email`, `Address`
+- **Relationships**:
+  - A member can have **zero or many cards** (1:0..N cardinality) through the `card` table.
+  - Members can also write reviews for media items (1:0..N cardinality) through the `review` table.
 
-Attributes: idloan, loanDate, returnedDate, expectedDueDate, idmember, idmediaItem.
-Loans form a many-to-many (M:N) relationship between members and media items through the foreign keys idmember and idmediaItem.
-Each loan record tracks a specific borrowing transaction.
-Review:
+### 2. Card
+- **Attributes**: `idCard`, `issue_date`, `expiration_date`, `idmember`, `status`
+- **Relationships**:
+  - Each card belongs to exactly one member (1:1 cardinality), but a member can hold multiple cards (1:N modality).
 
-Attributes: idReview, rating, reviewText, idmediaItem, idmember.
-Reviews connect members and media items in a many-to-one (M:N) relationship, as multiple reviews can exist for one media item, and a single member can review multiple items.
-MediaCreator:
+### 3. MediaItem
+- **Attributes**: `idmediaItem`, `title`, `release_year`, `language`, `idsection`, `idType`, `genre`
+- **Relationships**:
+  - Each media item is part of one section (1:1 cardinality), and each section can have multiple media items (1:N modality).
+  - Media items are linked to media types (e.g., book, magazine) in a 1:1 relationship.
 
-Attributes: idmediaItem, idCreator.
-This associative table connects media items to their creators, forming a many-to-many (M:N) relationship between mediaItem and creator.
-Creator:
+### 4. Loan
+- **Attributes**: `idloan`, `loanDate`, `returnedDate`, `expectedDueDate`, `idmember`, `idmediaItem`
+- **Relationships**:
+  - Loans form a **many-to-many (M:N)** relationship between members and media items through `idmember` and `idmediaItem`.
 
-Attributes: idCreator, creator_fname, creator_lname, typeCreator.
-Each creator can contribute to multiple media items, while each media item can have multiple creators (M:N cardinality).
-Employee:
+### 5. Review
+- **Attributes**: `idReview`, `rating`, `reviewText`, `idmediaItem`, `idmember`
+- **Relationships**:
+  - Reviews connect members and media items in a **many-to-one (M:N)** relationship, as multiple reviews can exist for one media item, and a single member can review multiple items.
 
-Attributes: idemployee, employee_Name, position, salary, idSection, employee_idemployee.
-Employees are related to sections in a many-to-one (M:N) relationship, as multiple employees can belong to a single section.
-The employee_idemployee column establishes a hierarchical structure to identify the "section boss" or manager of a specific section.
-Section:
+### 6. MediaCreator
+- **Attributes**: `idmediaItem`, `idCreator`
+- **Relationships**:
+  - This associative table connects media items to their creators, forming a **many-to-many (M:N)** relationship between `mediaItem` and `creator`.
 
-Attributes: idsection, sectionName, employee_idemployee.
-Each section is managed by one employee (1:1 modality), and a section can have multiple employees reporting to it (1:N cardinality).
-Sections also serve as organizational units for media items.
-MediaType:
+### 7. Creator
+- **Attributes**: `idCreator`, `creator_fname`, `creator_lname`, `typeCreator`
+- **Relationships**:
+  - Each creator can contribute to multiple media items, while each media item can have multiple creators (M:N cardinality).
 
-Attributes: idType, Description.
-Each media type (e.g., book, magazine) is associated with multiple media items (1:N cardinality), indicating the format or classification of the media.
+### 8. Employee
+- **Attributes**: `idemployee`, `employee_Name`, `position`, `salary`, `idSection`, `employee_idemployee`
+- **Relationships**:
+  - Employees are related to sections in a **many-to-one (M:N)** relationship, as multiple employees can belong to a single section.
+  - The `employee_idemployee` column establishes a hierarchical structure to identify the "section boss" or manager of a specific section.
+
+### 9. Section
+- **Attributes**: `idsection`, `sectionName`, `employee_idemployee`
+- **Relationships**:
+  - Each section is managed by one employee (1:1 modality), and a section can have multiple employees reporting to it (1:N cardinality).
+  - Sections also organize media items.
+
+### 10. MediaType
+- **Attributes**: `idType`, `Description`
+- **Relationships**:
+  - Each media type (e.g., book, magazine) is associated with multiple media items (1:N cardinality), indicating the format or classification of the media.
+
+## Cardinality and Modality Summary
+- **1:1**: Media items to sections, ensuring each item belongs to one section.
+- **1:N**: Members to cards and sections to media items, representing the hierarchy and ownership structure.
+- **M:N**: Media creators and media items, enabling flexible collaboration between creators and media resources.
+- **Optional Relationships**: Members may not have reviews, reflecting flexibility in participation.
+- **Mandatory Relationships**: Loans must reference both members and media items, ensuring complete transaction tracking.
+
+## Use Cases
+This data model is designed to:
+1. Track member activity, including issued cards and borrowing behavior.
+2. Manage and classify media items, ensuring proper organization and availability.
+3. Monitor employee responsibilities and their associated sections.
+4. Facilitate reporting on library usage trends, such as popular genres, loan frequencies, and review ratings.
+5. Support operational decision-making, such as staffing needs and inventory management.
+
+---
+
 <img width="886" alt="Screenshot 2024-12-03 at 12 07 11 AM" src="https://github.com/user-attachments/assets/66ac3fba-93f6-4ad6-9901-4c06d0ca864d">
 
 ## Data Dictionary
