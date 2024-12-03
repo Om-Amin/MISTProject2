@@ -29,7 +29,7 @@ CRN: 29704
 
 
 
-## Data Visualizations
+## Data Visualization
 
 # Visualization 1
 <img width="541" alt="Screenshot 2024-12-03 at 12 09 18 AM" src="https://github.com/user-attachments/assets/59eeaab4-2424-47bc-bfa3-e28185867600">
