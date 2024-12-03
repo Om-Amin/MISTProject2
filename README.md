@@ -223,6 +223,11 @@ This data model is designed to:
 ![image](https://github.com/user-attachments/assets/3d22e00c-2444-4868-bde2-ea26b7f5d1f9)
 #### It is important to be able to contact previous members who have yet to return their loaned items to issue a reminder to do so, or to be able to issue fines to recoup the costs of lost media items. 
 
+### Query 5 
+#### Query 5 finds the names, positions, and salaries of employees who are mentoring other employees and keeping track of how many many mentees they have.
+![image](https://github.com/user-attachments/assets/2ce651e2-dde4-4c04-96e9-997c7671f2bb)
+#### This query is important because ------.
+
 
 
 
