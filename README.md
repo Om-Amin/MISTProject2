@@ -218,6 +218,10 @@ This data model is designed to:
 ### Query 3
 <img width="434" alt="Screenshot 2024-12-03 at 12 12 03 AM" src="https://github.com/user-attachments/assets/05c6de7e-7dc4-4e43-ad43-f05b56973e38">
 
+### Query 4 
+![image](https://github.com/user-attachments/assets/3d22e00c-2444-4868-bde2-ea26b7f5d1f9)
+
+
 
 
 ## Data Visualization
