@@ -219,12 +219,9 @@ This data model is designed to:
 <img width="434" alt="Screenshot 2024-12-03 at 12 12 03 AM" src="https://github.com/user-attachments/assets/05c6de7e-7dc4-4e43-ad43-f05b56973e38">
 
 ### Query 4 
-#### Query 4 finds the names and emails of users who have not returned their loaned item and
-#### do not have an active card status.
+#### Query 4 finds the names and emails of users who have not returned their loaned item and do not have an active card status.
 ![image](https://github.com/user-attachments/assets/3d22e00c-2444-4868-bde2-ea26b7f5d1f9)
-
-#### It is important to be able to contact previous members who have yet to return their loaned items to issue 
-#### a reminder to do so, or to be able to issue fines to recoup the costs of lost media items. 
+#### It is important to be able to contact previous members who have yet to return their loaned items to issue a reminder to do so, or to be able to issue fines to recoup the costs of lost media items. 
 
 
 
