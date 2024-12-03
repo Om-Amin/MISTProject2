@@ -95,6 +95,118 @@ This data model is designed to:
 
 ## Data Dictionary
 
+## Table: `member`
+
+| Column Name | Description                               | Data Type | Size | Key |
+|-------------|-------------------------------------------|-----------|------|-----|
+| `idmember`  | PK; unique identifier for each member    | INT       | 11   | PK  |
+| `memberName`| Name of the member                       | VARCHAR   | 80   |     |
+| `email`     | Email of the member                      | VARCHAR   | 85   |     |
+| `Address`   | Address of the member                    | VARCHAR   | 85   |     |
+
+---
+
+## Table: `card`
+
+| Column Name      | Description                             | Data Type | Size | Key |
+|------------------|-----------------------------------------|-----------|------|-----|
+| `idCard`         | PK; unique identifier for each card    | INT       | 11   | PK  |
+| `issue_date`     | Date the card was issued               | DATE      |      |     |
+| `expiration_date`| Date the card expires                  | DATE      |      |     |
+| `idmember`       | FK; links to member                    | INT       | 11   | FK  |
+| `status`         | Status of the card (e.g., Active, Expired) | VARCHAR   | 45   |     |
+
+---
+
+## Table: `employee`
+
+| Column Name        | Description                                    | Data Type | Size | Key |
+|--------------------|------------------------------------------------|-----------|------|-----|
+| `idemployee`       | PK; unique identifier for each employee       | INT       | 11   | PK  |
+| `employee_Name`    | Name of the employee                          | VARCHAR   | 45   |     |
+| `position`         | Job position of the employee                  | VARCHAR   | 45   |     |
+| `salary`           | Salary of the employee                        | DECIMAL   | 10,2 |     |
+| `idSection`        | FK; links to section                          | INT       | 11   | FK  |
+| `employee_idemployee`| FK; links to mentor/manager (self-reference) | INT       | 11   | FK  |
+
+---
+
+## Table: `section`
+
+| Column Name         | Description                              | Data Type | Size | Key |
+|---------------------|------------------------------------------|-----------|------|-----|
+| `idsection`         | PK; unique identifier for each section  | INT       | 11   | PK  |
+| `sectionName`       | Name of the section                     | VARCHAR   | 45   |     |
+| `employee_idemployee`| FK; links to employee managing the section | INT       | 11   | FK  |
+
+---
+
+## Table: `mediaType`
+
+| Column Name  | Description                              | Data Type | Size | Key |
+|--------------|------------------------------------------|-----------|------|-----|
+| `idType`     | PK; unique identifier for media type     | INT       | 11   | PK  |
+| `Description`| Description of the media type           | VARCHAR   | 45   |     |
+
+---
+
+## Table: `mediaItem`
+
+| Column Name  | Description                                    | Data Type | Size | Key |
+|--------------|------------------------------------------------|-----------|------|-----|
+| `idmediaItem`| PK; unique identifier for each media item      | INT       | 11   | PK  |
+| `title`      | Title of the media item                       | VARCHAR   | 45   |     |
+| `release_year`| Release year of the media item               | DATE      |      |     |
+| `language`   | Language of the media item                    | VARCHAR   | 45   |     |
+| `idsection`  | FK; links to section                          | INT       | 11   | FK  |
+| `idType`     | FK; links to media type                       | INT       | 11   | FK  |
+| `genre`      | Genre of the media item                       | VARCHAR   | 45   |     |
+
+---
+
+## Table: `loan`
+
+| Column Name       | Description                                     | Data Type | Size | Key |
+|-------------------|-------------------------------------------------|-----------|------|-----|
+| `idloan`          | PK; unique identifier for each loan            | INT       | 11   | PK  |
+| `loanDate`        | Date the item was loaned                       | DATE      |      |     |
+| `returnedDate`    | Date the item was returned                     | DATE      |      |     |
+| `expectedDueDate` | Expected due date for the item                 | DATE      |      |     |
+| `idmember`        | FK; links to member                            | INT       | 11   | FK  |
+| `idmediaItem`     | FK; links to media item                        | INT       | 11   | FK  |
+
+---
+
+## Table: `creator`
+
+| Column Name     | Description                              | Data Type | Size | Key |
+|-----------------|------------------------------------------|-----------|------|-----|
+| `idCreator`     | PK; unique identifier for each creator  | INT       | 11   | PK  |
+| `creator_fname` | First name of the creator               | VARCHAR   | 45   |     |
+| `creator_lname` | Last name of the creator                | VARCHAR   | 45   |     |
+| `typeCreator`   | Type of creator (e.g., Author, Director) | VARCHAR   | 45   |     |
+
+---
+
+## Table: `mediaCreator`
+
+| Column Name  | Description                              | Data Type | Size | Key |
+|--------------|------------------------------------------|-----------|------|-----|
+| `idmediaItem`| FK; links to media item                 | INT       | 11   | FK  |
+| `idCreator`  | FK; links to creator                    | INT       | 11   | FK  |
+
+---
+
+## Table: `review`
+
+| Column Name   | Description                                  | Data Type | Size | Key |
+|---------------|----------------------------------------------|-----------|------|-----|
+| `idReview`    | PK; unique identifier for each review       | INT       | 11   | PK  |
+| `rating`      | Rating given to the media item              | DECIMAL   | 10,2 |     |
+| `reviewText`  | Review text provided                       | TEXT      | 200  |     |
+| `idmediaItem` | FK; links to media item                    | INT       | 11   | FK  |
+| `idmember`    | FK; links to member                        | INT       | 11   | FK  |
+
 ## Queries
 
 ### Query 1
