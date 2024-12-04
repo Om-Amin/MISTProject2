@@ -13,10 +13,10 @@ CRN: 29704
 - Kristen Wang [@kristennw](https://github.com/kristennw)
 - Oliver Tripcony [@OliverTripcony](https://github.com/OliverTripcony)
 
-## Data Model Description:# Library Management System Data Model
-
 ## Overview
 This data model represents a library management system designed to handle operations such as member registration, media item inventory, loans, reviews, and employee responsibilities. The schema provides a comprehensive structure that connects members, staff, and resources, facilitating efficient library operations.
+
+# Library Management System Data Model
 
 ## Entities and Relationships
 
