@@ -278,7 +278,7 @@ Visualization 2 is a bar chart that displays the number of books loaned per genr
 
 Visualization 3 is a bar chart that shows the average salary for employees by position within the organization. The visualization provides a clear comparison of compensation across roles, highlighting the highest average salary for Managers at $85,400 and the lowest for Assistants at $43,000. This data can help managers analyze pay structures, ensuring equity and competitiveness in salaries. It can also support strategic decisions, such as budgeting for new hires or allocating resources for salary adjustments to attract and retain talent effectively.
 
-### Dashboard
+### Visualization Dashboard
 
 
 ## Bookmarked Queries
