@@ -21,10 +21,14 @@ This data model represents a library management system designed to handle operat
 ## Entities and Relationships
 
 ### 1. Member
-- **Attributes**: `idmember`, `memberName`, `email`, `Address`
+
+- **Attributes**: `idmember`, `memberName`, `email`, `city`, `state`, `zipcode`
+
 - **Relationships**:
   - A member can have **zero or many cards** (1:0..N cardinality) through the `card` table.
   - Members can also write reviews for media items (1:0..N cardinality) through the `review` table.
+
+- **Changes**: The `Address` attribute has been removed and replaced with `city`, `state`, and `zipcode` to better standardize and organize location data.
 
 ### 2. Card
 - **Attributes**: `idCard`, `issue_date`, `expiration_date`, `idmember`, `status`
