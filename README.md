@@ -252,7 +252,8 @@ This data model is designed to:
 
 ### Visualization 1
 <img width="541" alt="Screenshot 2024-12-03 at 12 09 18 AM" src="https://github.com/user-attachments/assets/59eeaab4-2424-47bc-bfa3-e28185867600">
-#### Visualization 1 is a line chart that shows the number of library cards issued each year from 2015 to 2023. The chart makes it easy to see trends over time, like which years had more or fewer cards issued. It helps the library understand when they were successful in attracting new members and when there might have been challenges. For example, a sudden increase could mean a successful campaign, while a drop might show the need for better outreach. Overall, this visualization helps the library plan for the future by learning from past patterns.
+
+Visualization 1 is a line chart that shows the number of library cards issued each year from 2015 to 2023. The chart makes it easy to see trends over time, like which years had more or fewer cards issued. It helps the library understand when they were successful in attracting new members and when there might have been challenges. For example, a sudden increase could mean a successful campaign, while a drop might show the need for better outreach. Overall, this visualization helps the library plan for the future by learning from past patterns.
 
 ### Visualization 2
 <img width="545" alt="Screenshot 2024-12-03 at 12 09 59 AM" src="https://github.com/user-attachments/assets/41a8849a-b8c3-44fb-b136-3b2b38ded6e9">
