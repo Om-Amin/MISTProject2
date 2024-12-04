@@ -258,6 +258,8 @@ Visualization 1 is a line chart that shows the number of library cards issued ea
 ### Visualization 2
 <img width="545" alt="Screenshot 2024-12-03 at 12 09 59 AM" src="https://github.com/user-attachments/assets/41a8849a-b8c3-44fb-b136-3b2b38ded6e9">
 
+Visualization 2 is a bar chart that displays the number of books loaned per genre. It helps identify which genres are most popular among borrowers, such as Fantasy and Science Fiction, which have the highest counts. By highlighting borrowing trends, this visualization provides valuable insights into member preferences. Managers can use this information to allocate resources, acquire more books in popular genres, or promote underutilized ones to balance the collection and meet member demand effectively.
+
 ### Visualization 3
 <img width="1505" alt="Screenshot 2024-12-03 at 8 31 40 PM" src="https://github.com/user-attachments/assets/6126fea5-fd6e-4413-8511-71fc66261977">
 
