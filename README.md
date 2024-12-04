@@ -225,7 +225,10 @@ This data model is designed to:
 | NOT IN                       |         |        |         |         |         |
 
 ### Query 1
+This query lists the name, email, address, and language of library members who have borrowed media items in a language that isn't English and do not currently have an active library card.
 ![image](https://github.com/user-attachments/assets/5f41d1c7-a711-49d0-b761-0d8ddce9b813)
+
+Query 1 is useful as it can be used to improve member retention and address potential inventory gaps in different languages. If a language other than English has a significant amount of members whose cards have expired the library can focus attention on content acquisition in this language. After doing so, the library could potentially reach out to these past members, highlighting their improved offerings in hopes of gaining their business back.
 
 ### Query 2
 <img width="468" alt="Screenshot 2024-12-03 at 12 11 11 AM" src="https://github.com/user-attachments/assets/112245d0-6d67-4aeb-9f51-d2525ef23126">
