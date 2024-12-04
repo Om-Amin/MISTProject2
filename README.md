@@ -226,30 +226,35 @@ This data model is designed to:
 
 ### Query 1
 This query lists the name, email, address, and language of library members who have borrowed media items in a language that isn't English and do not currently have an active library card.
+
 ![image](https://github.com/user-attachments/assets/5f41d1c7-a711-49d0-b761-0d8ddce9b813)
 
 Query 1 is useful as it can be used to improve member retention and address potential inventory gaps in different languages. If a language other than English has a significant amount of members whose cards have expired the library can focus attention on content acquisition in this language. After doing so, the library could potentially reach out to these past members, highlighting their improved offerings in hopes of gaining their business back.
 
 ### Query 2
 This query lists media items that have been borrowed by less than three unique members. It also provides the genre and language of the media item, along with the amount of unique borrowers for each media item.
+
 <img width="468" alt="Screenshot 2024-12-03 at 12 11 11 AM" src="https://github.com/user-attachments/assets/112245d0-6d67-4aeb-9f51-d2525ef23126">
 
 Query 2 is useful as it highlights media that is underutilized, suggesting it is potentially outdated or has limited interest. Using this information the library can improve its offerings by removing media items that may not be of importance to the library audience. Consequently, this will improve the collection's relevance by aligning inventory with member preferences.
 
 ### Query 3
 This query lists the name of each genre, the total amount of reviews, and the average rating (in descending order) for genres that have at least two or more reviews.
+
 <img width="434" alt="Screenshot 2024-12-03 at 12 12 03 AM" src="https://github.com/user-attachments/assets/05c6de7e-7dc4-4e43-ad43-f05b56973e38">
 
 Query 3 is useful as it identifies popular genres with high average ratings. Using this information the library can focus on content that is valued most by members, improving member satisfaction. The query also only lists genres that have at least 2 reviews, reducing potential outliers/bias that may skew average ratings.
 
 ### Query 4 
 Query 4 finds the names and emails of users who have not returned their loaned item and do not have an active card status.
+
 ![image](https://github.com/user-attachments/assets/3d22e00c-2444-4868-bde2-ea26b7f5d1f9)
 
 It is important to be able to contact previous members who have yet to return their loaned items to issue a reminder to do so, or to be able to issue fines to recoup the costs of lost media items.
 
 ### Query 5 
 Query 5 finds the names, positions, and salaries of employees who are mentoring other employees and keeping track of how many many mentees they have.
+
 ![image](https://github.com/user-attachments/assets/2ce651e2-dde4-4c04-96e9-997c7671f2bb)
 
 
