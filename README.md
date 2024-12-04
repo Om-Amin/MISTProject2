@@ -231,6 +231,7 @@ This query lists the name, email, address, and language of library members who h
 Query 1 is useful as it can be used to improve member retention and address potential inventory gaps in different languages. If a language other than English has a significant amount of members whose cards have expired the library can focus attention on content acquisition in this language. After doing so, the library could potentially reach out to these past members, highlighting their improved offerings in hopes of gaining their business back.
 
 ### Query 2
+This query lists media items that have been borrowed by less than three unique members. It also provides the genre and language of the media item, along with the amount of unique borrowers for each media item.
 <img width="468" alt="Screenshot 2024-12-03 at 12 11 11 AM" src="https://github.com/user-attachments/assets/112245d0-6d67-4aeb-9f51-d2525ef23126">
 
 ### Query 3
