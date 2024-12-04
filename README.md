@@ -235,6 +235,7 @@ This query lists media items that have been borrowed by less than three unique m
 <img width="468" alt="Screenshot 2024-12-03 at 12 11 11 AM" src="https://github.com/user-attachments/assets/112245d0-6d67-4aeb-9f51-d2525ef23126">
 
 ### Query 3
+This query lists the name of each genre, the total amount of reviews, and the average rating (in descending order) for genres that have at least two or more reviews.
 <img width="434" alt="Screenshot 2024-12-03 at 12 12 03 AM" src="https://github.com/user-attachments/assets/05c6de7e-7dc4-4e43-ad43-f05b56973e38">
 
 ### Query 4 
