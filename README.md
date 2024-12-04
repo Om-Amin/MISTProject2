@@ -106,7 +106,9 @@ This data model is designed to:
 | `idmember`  | PK; unique identifier for each member    | INT       | 11   | PK  |
 | `memberName`| Name of the member                       | VARCHAR   | 80   |     |
 | `email`     | Email of the member                      | VARCHAR   | 85   |     |
-| `Address`   | Address of the member                    | VARCHAR   | 85   |     |
+| `city`      | City where the member resides            | VARCHAR   | 50   |     |
+| `state`     | State where the member resides           | VARCHAR   | 2    |     |
+| `zipcode`   | ZIP code of the member's address         | INT       | 10   |     |
 
 ---
 
