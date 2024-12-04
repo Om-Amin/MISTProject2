@@ -16,9 +16,7 @@ CRN: 29704
 ## Overview
 This data model represents a library management system designed to handle operations such as member registration, media item inventory, loans, reviews, and employee responsibilities. The schema provides a comprehensive structure that connects members, staff, and resources, facilitating efficient library operations.
 
-# Library Management System Data Model
-
-## Entities and Relationships
+## Library Management System Data Model Entities and Relationships
 
 ### 1. Member
 
