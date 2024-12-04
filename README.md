@@ -234,6 +234,8 @@ Query 1 is useful as it can be used to improve member retention and address pote
 This query lists media items that have been borrowed by less than three unique members. It also provides the genre and language of the media item, along with the amount of unique borrowers for each media item.
 <img width="468" alt="Screenshot 2024-12-03 at 12 11 11 AM" src="https://github.com/user-attachments/assets/112245d0-6d67-4aeb-9f51-d2525ef23126">
 
+Query 2 is useful as it highlights media that is underutilized, suggesting it is potentially outdated or has limited interest. Using this information the library can improve its offerings by removing media items that may not be of importance to the library audience. Consequently, this will improve the collection's relevance by aligning inventory with member preferences.
+
 ### Query 3
 This query lists the name of each genre, the total amount of reviews, and the average rating (in descending order) for genres that have at least two or more reviews.
 <img width="434" alt="Screenshot 2024-12-03 at 12 12 03 AM" src="https://github.com/user-attachments/assets/05c6de7e-7dc4-4e43-ad43-f05b56973e38">
