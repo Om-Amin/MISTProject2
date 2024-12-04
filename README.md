@@ -209,6 +209,17 @@ This data model is designed to:
 
 ## Queries
 
+| Feature                     | Query 1 | Query 2 | Query 3 | Query 4 | Query 5 |
+|-----------------------------|---------|---------|---------|---------|---------|
+| multiple table join          |   X     |    X     |   X     |    x    |    X    |
+| subquery                     |         |        |         |     x    |        |
+| GROUP BY                     |    X    |         |    X     |        |    X    |
+| GROUP BY with HAVING         |         |    X     |         |        |         |
+| multi-condition WHERE        |         |        |         |    x     |     X    | 
+| built-in functions (AVG, COUNT) |   X     |    X     |    X     |        |    X   | 
+| REGEXP                       |         |         |         |         |     X    | 
+| NOT IN                       |         |        |         |         |         |
+
 ### Query 1
 <img width="479" alt="Screenshot 2024-12-03 at 12 10 37 AM" src="https://github.com/user-attachments/assets/bfe780e5-9f9b-458e-afd6-d836c8ddfd3f">
 
