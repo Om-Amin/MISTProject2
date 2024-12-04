@@ -261,5 +261,5 @@ This data model is designed to:
 ## Bookmarked Queries
 Name of the database: cs_ota82991
 
-Each query listed above is stored in the database using stored procedures using the format: CALL TP_Q1();
+Each query listed above is stored in the database using stored procedures using the format: CALL TP_P1();
 
