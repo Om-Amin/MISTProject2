@@ -256,3 +256,10 @@ This data model is designed to:
 ### Visualization 2
 <img width="545" alt="Screenshot 2024-12-03 at 12 09 59 AM" src="https://github.com/user-attachments/assets/41a8849a-b8c3-44fb-b136-3b2b38ded6e9">
 
+### Visualization 3
+
+## Bookmarked Queries
+Name of the database: cs_ota82991
+
+Each query listed above is stored in the database using stored procedures using the format: CALL TP_Q1();
+
