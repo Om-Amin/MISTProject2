@@ -257,7 +257,7 @@ Query 5 finds the names, positions, and salaries of employees who are mentoring 
 
 ![image](https://github.com/user-attachments/assets/2ce651e2-dde4-4c04-96e9-997c7671f2bb)
 
-
+Query 5 is useful as it identifies non-managerial employees who actively contribute to their team by mentoring other employees. This information can be used to assess potential promotions and pay raises for such employees, placing them in managerial positions. Additionally, managers can ensure that mentors have even amounts of mentees, reducing the workload for overburdened employees and fostering productivity. 
 
 
 
