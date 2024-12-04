@@ -227,7 +227,7 @@ This data model is designed to:
 | NOT IN                       |         |        |         |         |         |
 
 ### Query 1
-<img width="479" alt="Screenshot 2024-12-03 at 12 10 37 AM" src="https://github.com/user-attachments/assets/bfe780e5-9f9b-458e-afd6-d836c8ddfd3f">
+![image](https://github.com/user-attachments/assets/5f41d1c7-a711-49d0-b761-0d8ddce9b813)
 
 ### Query 2
 <img width="468" alt="Screenshot 2024-12-03 at 12 11 11 AM" src="https://github.com/user-attachments/assets/112245d0-6d67-4aeb-9f51-d2525ef23126">
