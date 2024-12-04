@@ -240,15 +240,18 @@ Query 2 is useful as it highlights media that is underutilized, suggesting it is
 This query lists the name of each genre, the total amount of reviews, and the average rating (in descending order) for genres that have at least two or more reviews.
 <img width="434" alt="Screenshot 2024-12-03 at 12 12 03 AM" src="https://github.com/user-attachments/assets/05c6de7e-7dc4-4e43-ad43-f05b56973e38">
 
+Query 3 is useful as it identifies popular genres with high average ratings. Using this information the library can focus on content that is valued most by members, improving member satisfaction. The query also only lists genres that have at least 2 reviews, reducing potential outliers/bias that may skew average ratings.
+
 ### Query 4 
-#### Query 4 finds the names and emails of users who have not returned their loaned item and do not have an active card status.
+Query 4 finds the names and emails of users who have not returned their loaned item and do not have an active card status.
 ![image](https://github.com/user-attachments/assets/3d22e00c-2444-4868-bde2-ea26b7f5d1f9)
-#### It is important to be able to contact previous members who have yet to return their loaned items to issue a reminder to do so, or to be able to issue fines to recoup the costs of lost media items. 
+
+It is important to be able to contact previous members who have yet to return their loaned items to issue a reminder to do so, or to be able to issue fines to recoup the costs of lost media items.
 
 ### Query 5 
-#### Query 5 finds the names, positions, and salaries of employees who are mentoring other employees and keeping track of how many many mentees they have.
+Query 5 finds the names, positions, and salaries of employees who are mentoring other employees and keeping track of how many many mentees they have.
 ![image](https://github.com/user-attachments/assets/2ce651e2-dde4-4c04-96e9-997c7671f2bb)
-#### This query is important because ------.
+
 
 
 
